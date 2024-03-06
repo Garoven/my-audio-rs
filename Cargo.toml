@@ -1,0 +1,16 @@
+[package]
+name = "audio"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cpal = { version = "0.15.2", features = ["oboe-shared-stdcxx"] }
+log = "0.4.20"
+opus = "0.3.0"
+rodio = { version = "0.17.3", default-features = false }
+rusty_ytdl = { version = "0.6.6", default-features = false, features = ["rustls-tls", "search"] }
+symphonia = { version = "0.5.3", default-features = false, features = ["mkv"] }
+tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
+ureq = { version = "2.9.1", default-features = true }
